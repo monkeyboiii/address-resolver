@@ -2,7 +2,7 @@
   "name": "address-resolver",
   "version": "0.0.1",
   "description": "Hardhat TypeScript plugin address-resolver",
-  "repository": "github:monkeyboiii/address-resovler",
+  "repository": "github:monkeyboiii/address-resolver",
   "author": "monkeyboi.eth",
   "license": "MIT",
   "main": "dist/src/index.js",

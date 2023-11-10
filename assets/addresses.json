@@ -42,7 +42,7 @@
         },
         "arbitrum": {
             "USDC.e": {
-                "chainId": 1,
+                "chainId": 42161,
                 "address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
                 "decimals": 6,
                 "symbol": "USDC.e",

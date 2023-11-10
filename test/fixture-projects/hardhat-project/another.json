@@ -1,0 +1,12 @@
+{
+  "timeswap": {
+    "mainnet": {
+      "core": "timeswap-mainnet-core"
+    },
+    "quackswap": {
+      "arbitrum": {
+        "periphery": "quackswap-arbitrum-periphery"
+      }
+    }
+  }
+}

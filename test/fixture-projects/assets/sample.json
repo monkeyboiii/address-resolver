@@ -1,20 +1,20 @@
 {
   "uniswap": {
     "mainnet": {
-      "PoolFactory": "0x1F98431c8aD98523631AE4a59f267346ea31F984"
+      "PoolFactory": "uniswap-mainnet-PoolFactory"
     },
     "hardhat": {
-      "SampleContract": "0x1234567890"
+      "SampleContract": "uniswap-hardhat-SampleContract"
     }
   },
   "token": {
     "mainnet": {
       "ETH": {
-        "chainId": 1,
-        "address": "0xEEeeeEEEeeEE",
-        "decimals": 18,
-        "symbol": "ETH",
-        "name": " Ether"
+        "chainId": 100,
+        "address": "0x0",
+        "decimals": 14,
+        "symbol": "ETHX",
+        "name": " EtherX"
       }
     },
     "hardhat": {

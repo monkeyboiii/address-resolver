@@ -1,7 +1,7 @@
 import fs from "fs";
 import { Token } from "@uniswap/sdk-core";
 import { HardhatRuntimeEnvironment } from "hardhat/types";
-import { AddressMapping, UniswapToken } from "./base";
+import { AddressMapping, ReservedCategory, UniswapToken } from "./base";
 
 function initPropertyIfNeeded(
     mapping: Record<string, unknown>,
@@ -39,21 +39,30 @@ export class AddressResolver {
                             this.mapping[projectOrCategory],
                             network
                         );
-                        for (const symbol in addressMapping[projectOrCategory][
-                            network
-                        ]) {
+                        for (const nameOrSymbol in addressMapping[
+                            projectOrCategory
+                        ][network]) {
                             initPropertyIfNeeded(
                                 this.mapping[projectOrCategory][network],
-                                symbol
+                                nameOrSymbol
                             );
-                            Object.assign(
+                            if (ReservedCategory.includes(projectOrCategory)) {
+                                Object.assign(
+                                    this.mapping[projectOrCategory][network][
+                                        nameOrSymbol
+                                    ],
+                                    addressMapping[projectOrCategory][network][
+                                        nameOrSymbol
+                                    ]
+                                );
+                            } else {
                                 this.mapping[projectOrCategory][network][
-                                    symbol
-                                ],
-                                addressMapping[projectOrCategory][network][
-                                    symbol
-                                ]
-                            );
+                                    nameOrSymbol
+                                ] =
+                                    addressMapping[projectOrCategory][network][
+                                        nameOrSymbol
+                                    ];
+                            }
                         }
                     }
                 }
