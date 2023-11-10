@@ -1,0 +1,30 @@
+{
+  "uniswap": {
+    "mainnet": {
+      "PoolFactory": "0x1F98431c8aD98523631AE4a59f267346ea31F984"
+    },
+    "hardhat": {
+      "SampleContract": "0x1234567890"
+    }
+  },
+  "token": {
+    "mainnet": {
+      "ETH": {
+        "chainId": 1,
+        "address": "0xEEeeeEEEeeEE",
+        "decimals": 18,
+        "symbol": "ETH",
+        "name": " Ether"
+      }
+    },
+    "hardhat": {
+      "USDT": {
+        "chainId": 8545,
+        "address": "0x01234",
+        "decimals": 18,
+        "symbol": "USDT",
+        "name": "Hardhat USDT"
+      }
+    }
+  }
+}

@@ -16,4 +16,4 @@ cache: npm
 
 branches:
   only:
-    - master
+    - main

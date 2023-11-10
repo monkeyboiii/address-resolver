@@ -8,3 +8,9 @@ indent_style = space
 indent_size = 2
 insert_final_newline = true
 trim_trailing_whitespace = false
+
+[*.ts]
+indent_size = 4
+
+[assets/*.json]
+indent_size = 4

@@ -1,0 +1,10 @@
+{
+  "timeswap": {
+    "mainnet": {
+      "core": "0xIDONTKNOW"
+    },
+    "hardhat": {
+      "periphery": "0xTIMESWAP"
+    }
+  }
+}

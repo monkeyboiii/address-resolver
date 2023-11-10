@@ -1,0 +1,53 @@
+{
+    "uniswap": {
+        "mainnet": {
+            "PoolFactory": "0x1F98431c8aD98523631AE4a59f267346ea31F984",
+            "Quoter": "0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6",
+
+            "UniversalRouter": "0x3fC91A3afd70395Cd496C647d5a6CC9D4B2b7FAD",
+            "UniversalRouterDeprecated": "0xEf1c6E67703c7BD7107eed8303Fbe6EC2554BF6B",
+            "UniversalRouterDeprecatedV1_3": "0x3F6328669a86bef431Dc6F9201A5B90F7975a023"
+        },
+        "arbitrum": {
+            "UniversalRouter": "0xeC8B0F7Ffe3ae75d7FfAb09429e3675bb63503e4",
+            "UniversalRouterDeprecated": "0x4C60051384bd2d3C01bfc845Cf5F4b44bcbE9de5"
+        },
+        "arbitrum_goerli": {
+            "UniversalRouter": "0x3fC91A3afd70395Cd496C647d5a6CC9D4B2b7FAD",
+            "UniversalRouterDeprecated": "0x4648a43B2C14Da09FdF82B161150d3F634f40491"
+        }
+    },
+    "timeswap": {
+        "arbitrum": {
+            "OptionFactory": "0x406d3Dfcbe20b642c2262b29b960822975371502"
+        },
+        "mantle": {}
+    },
+    "token": {
+        "mainnet": {
+            "WETH9": {
+                "chainId": 1,
+                "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+                "decimals": 18,
+                "symbol": "WETH",
+                "name": "Wrapped Ether"
+            },
+            "USDC": {
+                "chainId": 1,
+                "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+                "decimals": 6,
+                "symbol": "USDC",
+                "name": "USD//C"
+            }
+        },
+        "arbitrum": {
+            "USDC.e": {
+                "chainId": 1,
+                "address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+                "decimals": 6,
+                "symbol": "USDC.e",
+                "name": "Bridged USDC"
+            }
+        }
+    }
+}
