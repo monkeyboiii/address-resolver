@@ -35,7 +35,9 @@ extendConfig(
             }
         }
 
-        config.addressResolver.assets = assets;
+        config.addressResolver = {
+            assets: assets,
+        };
     }
 );
 
